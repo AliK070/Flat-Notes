@@ -2,11 +2,32 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
+    <title>Flat Notes | By Ali Khan</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="note-sticky-solid (1).svg" />
+    <script defer src="sticky.js"></script>
   </head>
+
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <div spellcheck="false" class="container_btn">
+      <h1>Flat Notes <i class="fas fa-sticky-note"></i></h1>
+      <q>A simple and elegent way of taking sticky notes.</q>
+      <button onclick="addNote()" id="btn_main">
+        <i class="fas fa-plus"></i> Add Note
+      </button>
+    </div>
+
+    <div id="container_main"></div>
   </body>
 </html>
