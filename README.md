@@ -15,8 +15,11 @@ A very simple sticky note app for note taking, making todo lists, reminders, and
 - Draggable Sticky Notes.
 - Shows date of creation.
 - Center or top navbar styles.
+  
 ![Capture_4](https://github.com/AliK070/Flat-Notes/assets/170590240/e037b567-184b-4f41-9631-16a44a3593bd)
+
 ![Capture_3](https://github.com/AliK070/Flat-Notes/assets/170590240/9b0be936-df6d-40d3-991a-47a27d32cd86)
+
 ![Capture_2](https://github.com/AliK070/Flat-Notes/assets/170590240/9424888f-9165-442e-82ab-2f49c407ad61)
 
 
