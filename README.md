@@ -1,4 +1,4 @@
-## FlatNotes
+## FlatNotes | Release: [v1.1.0](https://github.com/AliK070/Flat-Notes/releases) | Website version: 
 
 
 # About:
