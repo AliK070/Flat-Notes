@@ -9,8 +9,8 @@ function addNote() {
   var note = document.createElement("div");
   note.classList.add("flash_anim");
   note.style.position = "fixed";
-  note.style.left = "49%";
-  note.style.top = "70%";
+  note.style.left = "50%";
+  note.style.top = "50%";
   note.style.transform = "translate(-50%, -50%)";
   note.classList.add("body_note");
   note.draggable = true;
@@ -19,13 +19,16 @@ function addNote() {
   timedate.innerHTML = new Date().toLocaleDateString();
 
   note.ondragend = function (event) {
-    this.style.left = event.clientX + "px";
-    this.style.top = event.clientY + "px";
+    this.style.left = event.clientX - 40 + "px";
+    this.style.top = event.clientY - 40 + "px";
     saveNotes();
   };
 
+
+
   var header = document.createElement("div");
   header.classList.add("header_note");
+
 
   var title = document.createElement("div");
   title.classList.add("header_title");
@@ -64,6 +67,14 @@ function saveNotes() {
   deleteNotes();
 }
 
+function clearNotes() { 
+    var container = document.getElementById("container_main");
+    while(container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+    localStorage.removeItem("notes");
+}
+
 function deleteNotes() {
   var buttondelete = document.getElementsByClassName("icon_btn");
   for (var i = 0; i < buttondelete.length; i++) {
@@ -75,4 +86,38 @@ function deleteNotes() {
       saveNotes();
     };
   }
+
 }
+document.getElementById("navbar_mid").style.display = "none";
+
+function toggleNav() {
+  var nav_top = document.getElementById("navbar_top");
+  var nav_mid = document.getElementById("navbar_mid");
+
+  if (nav_top.style.display == "none") {
+    nav_top.classList.add("fade_anim");
+    nav_mid.classList.add("fade_anim");
+    nav_top.style.display = "block";
+    nav_mid.style.display = "none";
+  } else {
+    nav_top.classList.add("fade_anim");
+    nav_mid.classList.add("fade_anim");
+    nav_top.style.display = "none";
+    nav_mid.style.display = "block";
+  }
+  localStorage.setItem("nav_top_display", nav_top.style.display);
+  localStorage.setItem("nav_mid_display", nav_mid.style.display);
+}
+window.onload = function() {
+  var nav_top = document.getElementById("navbar_top");
+  var nav_mid = document.getElementById("navbar_mid");
+
+  if (localStorage.getItem("nav_top_display")) {
+    nav_top.style.display = localStorage.getItem("nav_top_display");
+  }
+  if (localStorage.getItem("nav_mid_display")) {
+    nav_mid.style.display = localStorage.getItem("nav_mid_display");
+  }
+}
+
+

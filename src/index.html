@@ -20,14 +20,40 @@
   </head>
 
   <body>
+
+<div id = "navbar_top">
+    <ul class="nav-list" id = "navbar">
+      <li class="nav-item">
+        <a><h1>Flat Notes <i class="fas fa-sticky-note"></i></h1></a>
+      </li>
+
+      <li class="nav-item">
+        <a><button onclick="addNote()" id="btn_main"><i class="fa-solid fa-notes-medical"></i> </i> Add Note</button></a>
+      </li>
+
+      <li class="nav-item">
+        <a><button onclick="clearNotes()" id="btn_main"> <i class="fa-solid fa-broom"></i> Clear Notes</button></a>
+      </li>
+      <li class="nav-item">
+        <a><button onclick="toggleNav()" id="btn_main" class = "toggle-btn"><i class="fa-solid fa-align-center"></i> Align Middle</button></a>
+      </li>
+    </ul>
+    <hr>
+</div>
+
+<div id = "navbar_mid">
     <div spellcheck="false" class="container_btn">
       <h1>Flat Notes <i class="fas fa-sticky-note"></i></h1>
       <q>A simple and elegent way of taking sticky notes.</q>
-      <button onclick="addNote()" id="btn_main">
-        <i class="fas fa-plus"></i> Add Note
+      <a><button onclick="addNote()" id="btn_main"><i class="fa-solid fa-notes-medical"></i> </i> Add Note</button></a>
+      <a><button onclick="clearNotes()" id="btn_main"> <i class="fa-solid fa-broom"></i> Clear Notes</button></a>
+      <button onclick="toggleNav()" id="btn_main">
+        <i class="fa-solid fa-caret-up fa-lg"></i> Align Top
       </button>
-    </div>
+    </div> 
+</div>
 
-    <div id="container_main"></div>
+    <div id="container_main">
+    </div>
   </body>
 </html>
