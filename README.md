@@ -32,4 +32,9 @@ To use flat notes you simply click on the "add note" button to add a sticky note
 
 https://github.com/AliK070/Flat-Notes/assets/170590240/11fb98b4-e287-49f9-b88e-2df72eb62c66
 
+# Next features:
+
+- Add buttons for italics, bold font, etc.
+- Make an edit button instead of clicking on the button.
+- Fix smoothness of dragging. 
 
