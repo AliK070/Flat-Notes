@@ -3,7 +3,7 @@
 
 # About:
 
-A very simple sticky note app for note taking, making todo lists, reminders, and lots more! Created in Electron, HTML, CSS, and JS. I finally decided to get more into JS and learn.
+A very simple sticky note app for note taking, making todo lists, reminders, and lots more! Created in Electron, HTML, CSS, and JS. I finally decided to get more into JS and learn. I got  inspiration from my portfolio and based the design for the notes using that.
 
 ![Capture](https://github.com/AliK070/Flat-Notes/assets/170590240/f3ee5693-7ba0-49ba-b470-96135779fbac)
 
