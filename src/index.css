@@ -76,6 +76,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.footer_note {
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+}
 
 .header_title {
   flex-grow: 1;
